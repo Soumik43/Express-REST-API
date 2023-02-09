@@ -17,11 +17,11 @@ Install dependencies
 Run the server for dev deployment use
 
 ```bash
-    npm run dev
+  npm run dev
 ```
 
 Default PORT is set to 3000, if you need an alternate, create a `.env` file in your directory and set your `PORT = {desired PORT}`
 
 ```bash
-    npm run dev
+  npm run dev
 ```
