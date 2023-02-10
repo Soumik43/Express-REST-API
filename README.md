@@ -14,10 +14,10 @@ Install dependencies
   npm i
 ```
 
-Default PORT is set to 3000, if you need an alternate, create a `.env` file in your directory and set your `PORT = {desired PORT}`
+Default PORT is set to 3000, if you need an alternate, create a `.env` file in your directory and set your `.env` file to
 
 ```bash
-  npm run dev
+  PORT = {your desired port}
 ```
 
 
