@@ -20,6 +20,12 @@ Run the server for dev deployment use
   npm run dev
 ```
 
+Run the server for prod deployment use
+
+```bash
+  npm run start
+```
+
 Default PORT is set to 3000, if you need an alternate, create a `.env` file in your directory and set your `PORT = {desired PORT}`
 
 ```bash
