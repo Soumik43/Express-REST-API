@@ -11,7 +11,16 @@ module.exports.getUsers = (req, res) => {
 };
 
 module.exports.createUser = (req, res) => {
-    const { id, name, profileImage, introduction, profileLink } = req.body;
+    const userObjKeys = ["id", "name", "profileImage", "introduction", "profileLink"];
+    const isUser = userObjKeys.every((key) => Object.keys(req.body).includes(key));
+    if (!isUser)
+        return errorResponseMessage(
+            new AppError(400, {
+                message: "Invalid User body!",
+            }),
+            req,
+            res
+        );
     const user = new User(req.body);
     Users.push(user);
     const jsonContent = JSON.stringify(Users);

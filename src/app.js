@@ -7,6 +7,4 @@ app.use(express.json());
 
 app.use(userRoute);
 
-app.listen(process.env.PORT || 3000, () => {
-    console.log("done");
-});
+app.listen(process.env.PORT || 3000, () => {});
