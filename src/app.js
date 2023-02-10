@@ -7,4 +7,6 @@ app.use(express.json());
 
 app.use(userRoute);
 
-app.listen(process.env.PORT || 3000, () => {});
+app.listen(process.env.PORT || 3000, () => {
+    console.log('Server running successfully!');
+});
