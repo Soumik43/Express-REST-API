@@ -4,6 +4,26 @@ Here we are creating a REST api using the underlying file system.
 Data will be stored in a json file in the project folder named `data.json`. The project will replicate the express server we build during sessions.
 The API has CRUD capability.
 
+## Routes
+
+-   `/users`
+
+    -   `GET`: Get all users.
+    
+-   `/createUser`
+
+    -   `POST`: Create new user.
+
+-   `/users/:id`
+
+    -   `GET`: Get user by ID.
+    -   `PATCH`: Update user by ID.
+    -   `DELETE`: Delete user by ID.
+    
+-   `/findUser`
+
+    -   `GET`: Get user by specific requirements (passing data).
+
 ## Deployment
 
 To deploy this project run
